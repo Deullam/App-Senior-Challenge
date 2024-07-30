@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>{{ data ? "Editar Cliente" : "Cadastrar Cliente" }}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="clientForm">
+    <mat-form-field>
+      <input matInput placeholder="Nome Completo" formControlName="name" />
+    </mat-form-field>
+
+    <!-- <div>
+      <h3>E-mails</h3>
+      <button mat-button (click)="addEmail()">Adicionar Email</button>
+      <ul>
+        <li *ngFor="let email of emails.controls; let i = index">
+          <mat-form-field>
+            <input matInput placeholder="Email" formControlName="i" />
+          </mat-form-field>
+          <button mat-button (click)="removeEmail(i)">Remover</button>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- <div>
+      <h3>Telefones</h3>
+      <button mat-button (click)="addPhone()">Adicionar Telefone</button>
+      <ul>
+        <li *ngFor="let phone of phones.controls; let i = index">
+          <mat-form-field>
+            <input matInput placeholder="Telefone" formControlName="i" />
+          </mat-form-field>
+          <button mat-button (click)="removePhone(i)">Remover</button>
+        </li>
+      </ul>
+    </div> -->
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button (click)="onSave()">Salvar</button>
+</div>

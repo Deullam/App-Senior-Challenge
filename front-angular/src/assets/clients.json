@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "João Silva",
+    "emails": ["joao.silva@example.com", "joao@example.com", "joao@example.com", "joao@example.com", "joao@example.com", "joao@example.com", "joao@example.com", "joao@example.com"],
+    "phones": ["(11) 1234-5678", "(11) 8765-4321"],
+    "created_at": "2023-01-01"
+  },
+  {
+    "id": 2,
+    "name": "Maria Oliveira",
+    "emails": ["maria.oliveira@example.com"],
+    "phones": ["(21) 9876-5432"],
+    "created_at": "2023-02-15"
+  },
+  {
+    "id": 3,
+    "name": "Carlos Pereira",
+    "emails": ["carlos.pereira@example.com", "c.pereira@example.com"],
+    "phones": ["(31) 9988-7766", "(31) 8877-6655"],
+    "created_at": "2023-03-10"
+  },
+  {
+    "id": 4,
+    "name": "Ana Souza",
+    "emails": ["ana.souza@example.com"],
+    "phones": ["(41) 9999-8888"],
+    "created_at": "2023-04-25"
+  },
+  {
+    "id": 5,
+    "name": "Pedro Lima",
+    "emails": ["pedro.lima@example.com", "p.lima@example.com"],
+    "phones": ["(51) 9123-4567", "(51) 7654-3210"],
+    "created_at": "2023-05-30"
+  }
+]

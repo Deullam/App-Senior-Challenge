@@ -1,0 +1,91 @@
+table {
+  width: 100%;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.element-row:not(.expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.element-row:not(.expanded-row):active {
+  background: #efefef;
+}
+
+.element-row td {
+  border-bottom-width: 0;
+}
+
+.element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  padding-inline: 50px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+  margin-bottom: 16px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+
+.element-list ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.element-list ul li::before {
+  content: '-';
+  margin-right: 8px;
+}
+
+.element-section {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.element-detail {
+  padding-top: 4px;
+  padding-inline: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 16px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.element-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element-subtitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.element-detail.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+.element-detail.collapsed {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.element-detail {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}

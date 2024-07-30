@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
-using Challenge.Application.Features.Boletos;
-using Challenge.Domain.Features.Boleto;
+using Challenge.Application.Features.Clients;
+using Challenge.Application.Features.Contacts;
+using Challenge.Domain.Features.Contacts;
+using Challenge.Domain.Features.Clients;
+
 
 namespace Challenge.Application.AutoMapper
 {
@@ -8,7 +11,8 @@ namespace Challenge.Application.AutoMapper
     {
         public ViewModelToDomainMappingProfile()
         {
-            CreateMap<Boleto, BoletoViewModel>();
+            CreateMap<Client, ClientViewModel>();
+            CreateMap<Contact, ContactViewModel>();
         }
     }
 }

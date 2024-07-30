@@ -1,7 +1,8 @@
 ﻿using SimpleInjector;
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
-using Challenge.Application.Features.Boletos;
+using Challenge.Application.Features.Clients;
+using Challenge.Application.Features.Contacts;
 
 namespace Challenge.Infra.IoC.Features.Containers
 {
@@ -12,7 +13,10 @@ namespace Challenge.Infra.IoC.Features.Containers
         public static void RegisterServices(IServiceCollection services)
         {
             // Application
-            services.AddScoped<IBoletoService, BoletoService>();
+            services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IContactService, ContactService>();
+
+
         }
     }
 }
